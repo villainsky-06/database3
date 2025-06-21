@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IKZ RAPTOR</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+  background: url('https://files.catbox.moe/oa7o8a.jpg') no-repeat center center fixed;
+  background-size: cover;
+      color: #;
+      min-height: 100vh;
+      padding: 2rem;
+      overflow-x: hidden;
+    }
+    .container {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      border-radius: 1rem;
+      background: rgba(10, 10, 30, 0.6);
+      box-shadow: 0 0 25px rgba(1, 1, 1, 1);
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #00FF00;
+      text-shadow: 0 0 5px #00FF00, 0 0 15px #00FF00;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      color: #bb66ff;
+      margin-top: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #00FFFF;
+      line-height: 1.6;
+    }
+    .btn,
+    .link-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.9rem 1.5rem;
+      margin: 1rem auto 0;
+      border-radius: 2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #FFFFFF;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: 0.3s;
+      border: none;
+      width: 80%;
+    }
+    .btn:hover,
+    .link-btn:hover {
+      transform: scale(1.05);
+    }
+    .btn { background: #FF0000; }
+    .whatsapp { background: #FF0000; }
+    .channelwa { background: #FF0000; }
+    .testimoni { background: #FF0000; }
+    .tiktok { background: #00FFFF; }
+    .instagram { background: #FF0000; }
+    .telegram { background: #FF0000; }
+    .produk { background: #FF0000; }
+    .payment { background: #FF0000; }
+
+    .copyright {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #00FF00;
+    }
+
+    /* LOGO WARNA UNGU */
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #FF0000;
+      box-shadow: 0 0 15px #FF0000;
+      object-fit: cover;
+      margin: 1rem 0;
+    }
+
+    .page {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    #audio-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #FF0000;
+      color: white;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 0 10px #bb66ff;
+      z-index: 999;
+    }
+    #click-text {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      color: white;
+      background: #FF0000;
+      padding: 0.3rem 0.8rem;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 0 10px #bb66ff;
+      display: none;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <button id="audio-btn">▶</button>
+  <div id="click-text">Click Me!</div>
+  <audio id="bg-sound" src="https://files.catbox.moe/kdxrw6.ogg"></audio>
+
+  <!-- PAGE 1 -->
+  <div id="page1" class="container page active">
+    <h1>HI WELCOME TO WEBSITE IKZ STORE</h1>
+    <h1>IKZ OFFCIAL</h1>
+    <img src="https://files.catbox.moe/8tu5vt.jpg" alt="IKZ offcial-ID" class="profile-pic" />
+    <p>⚊𝗄𝖺𝗅𝗈 𝖻𝖾𝗅𝗎𝗆 𝗉𝗎𝗇𝗒𝖺 𝖺𝗉𝖺-𝖺𝗉𝖺, 𝗆𝖾𝗇𝖽𝗂𝗇𝗀 𝗃𝖺𝗇𝗀𝖺𝗇 𝗉𝗎𝗇𝗒𝖺 𝗌𝗂𝖺𝗉𝖺-𝗌𝗂𝖺𝗉𝖺 𝖽𝗎𝗅𝗎</p>
+    <a href="#" class="btn" onclick="showPage2()">Selengkapnya</a>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div id="page2" class="container page">
+    <img src="https://files.catbox.moe/8tu5vt.jpg" alt="IKZ OFFCIAL-ID" class="profile-pic" />
+    <h2>IKZ OFFCIAL-ID</h2>
+    <div class="links">
+      <a href="https://wa.me/6283170966509" class="link-btn whatsapp">WhatsApp</a>
+      <a href="https://whatsapp.com/channel/0029VbBYKPVBA1f6Sf2cTd2o" class="link-btn channelwa">Saluran Utama</a>
+      <a href="https://whatsapp.com/channel/0029VbBYKPVBA1f6Sf2cTd2o" class="link-btn testimoni">Testimoni</a>
+      <a href="https://www.tiktok.com/@dikzxzxzyy?_t=ZS-8xOVvQaWACu&_r=1" class="link-btn instagram">Tiktok</a>
+      <a href="https://t.me/ikzoffcial" class="link-btn telegram">Telegram</a>
+      <a href="https://listprodukikz.vercel.app/" class="link-btn produk">Produk</a>
+      <a href="https://payment-ikz.vercel.app/" class="link-btn payment">Payment</a>
+      <a href="#" class="btn" onclick="showPage1()">Kembali</a>
+    </div>
+    <div class="copyright">&copy; 2025 Ikz offcial Website</div>
+  </div>
+
+  <script>
+    function showClickText() {
+      const text = document.getElementById('click-text');
+      text.style.display = 'block';
+      setTimeout(() => text.style.display = 'none', 2000);
+    }
+
+    function showPage1() {
+      document.getElementById('page2').classList.remove('active');
+      document.getElementById('page1').classList.add('active');
+      showClickText();
+    }
+
+    function showPage2() {
+      document.getElementById('page1').classList.remove('active');
+      document.getElementById('page2').classList.add('active');
+      showClickText();
+    }
+
+    const audioBtn = document.getElementById('audio-btn');
+    const audio = document.getElementById('bg-sound');
+    let isPlaying = false;
+
+    audioBtn.addEventListener('click', () => {
+      if (!isPlaying) {
+        audio.play();
+        audioBtn.textContent = '■';
+      } else {
+        audio.pause();
+        audioBtn.textContent = '▶';
+      }
+      isPlaying = !isPlaying;
+    });
+
+    window.addEventListener('load', () => {
+      showClickText();
+    });
+  </script>
+</body>
+</html>
